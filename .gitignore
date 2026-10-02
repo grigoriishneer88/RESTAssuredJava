@@ -1,1 +1,21 @@
-/.metadata/
+# Maven
+target/
+
+# TestNG reports
+test-output/
+
+# Eclipse
+.metadata/
+.settings/
+.classpath
+.project
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
