@@ -51,7 +51,7 @@ public class EcommerceApiTest {
 		.param("productPrice", "55006")
 		.param("productDescription", "apppy macbuk6")
 		.param("productFor", "all")
-	    .multiPart("productImage", new File("/Users/grigorii/Desktop/Screenshot 2026-09-17 at 17.17.01.png"));
+	    .multiPart("productImage", new File("src/test/resources/product-image.png"));
 		
 		AddProductResponse add_product_response_payload = request_add_product.when().post("/api/ecom/product/add-product")
 		.then().log().all().extract().response().as(AddProductResponse.class);

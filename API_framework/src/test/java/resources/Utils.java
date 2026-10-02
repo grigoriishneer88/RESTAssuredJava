@@ -35,7 +35,7 @@ public class Utils {
 	public static String getGlobalValue(String key) throws IOException 
 	{
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("/Users/grigorii/eclipse-workspace/API_framework/src/test/java/resources/global.properties");
+		FileInputStream fis = new FileInputStream("src/test/java/resources/global.properties");
 		prop.load(fis);
 		return prop.getProperty(key);
 	}

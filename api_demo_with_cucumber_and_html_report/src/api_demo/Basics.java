@@ -18,7 +18,7 @@ public class Basics {
 		// add place
 
 		String response = given().queryParam("key", "qaclick123").header("Content-type", "application/json")
-		.body(new String(Files.readAllBytes(Paths.get("/Users/grigorii/eclipse-workspace/api_demo/placeBody.json")))).when().post("maps/api/place/add/json")
+		.body(new String(Files.readAllBytes(Paths.get("placeBody.json")))).when().post("maps/api/place/add/json")
 		.then().log().all().assertThat().statusCode(200).body("scope", equalTo("APP"))
 		.header("server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 		

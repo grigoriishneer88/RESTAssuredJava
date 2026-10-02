@@ -15,7 +15,7 @@ public class dataDriven {
 	
 	public ArrayList getData(String test_case_name, String sheet_name) throws IOException {
 		ArrayList a = new ArrayList();
-		FileInputStream file = new FileInputStream("/Users/grigorii/eclipse-workspace/Untitled/ExcelDriven/Book2.xlsx");
+		FileInputStream file = new FileInputStream("Book2.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		int sheets = workbook.getNumberOfSheets();
 		for (int i = 0;i<sheets;i++) {
