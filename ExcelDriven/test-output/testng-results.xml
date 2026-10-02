@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-02T12:27:57 IDT" name="Default suite" finished-at="2026-10-02T12:27:59 IDT" duration-ms="2387">
+    <groups>
+    </groups>
+    <test started-at="2026-10-02T12:27:57 IDT" name="Default test" finished-at="2026-10-02T12:27:59 IDT" duration-ms="2387">
+      <class name="library">
+        <test-method signature="addBook()[pri:0, instance:library@63021689]" started-at="2026-10-02T12:27:57 IDT" name="addBook" finished-at="2026-10-02T12:27:59 IDT" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+        <test-method signature="getBook()[pri:0, instance:library@63021689]" started-at="2026-10-02T12:27:59 IDT" name="getBook" finished-at="2026-10-02T12:27:59 IDT" depends-on-methods="library.addBook" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBook -->
+        <test-method signature="deleteBook()[pri:0, instance:library@63021689]" started-at="2026-10-02T12:27:59 IDT" name="deleteBook" finished-at="2026-10-02T12:27:59 IDT" depends-on-methods="library.getBook" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBook -->
+      </class> <!-- library -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
